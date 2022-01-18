@@ -27,7 +27,7 @@ class SearchPage extends GetView {
           child: Column(
             children: [
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                padding: const EdgeInsets.symmetric(horizontal: 10.0),
                 width: Get.width,
                 child: Text('total'.tr),
               ),
@@ -51,7 +51,7 @@ class SearchPage extends GetView {
           child: Column(
             children: [
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                padding: const EdgeInsets.symmetric(horizontal: 10.0),
                 width: Get.width,
                 child: Text('range'.tr),
               ),
@@ -84,7 +84,15 @@ class SearchPage extends GetView {
           height: 10.0,
         ),
         Center(
-          child: CustomButton(),
+          child: CustomButton(
+            placeHolder: Text(
+              'TeklifimGelsin',
+              style: Get.textTheme.button,
+            ),
+            func: () {
+              _x.fetchData();
+            },
+          ),
         )
       ],
     );

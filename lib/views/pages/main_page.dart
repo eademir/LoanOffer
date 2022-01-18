@@ -33,7 +33,7 @@ class MainPage extends GetView {
                 ],
               ),
               child: Obx(
-                () => _x.isLoading.isTrue ? SearchPage() : ResultPage(),
+                () => _x.isLoading.isTrue ? SearchPage() : const ResultPage(),
               ),
             ),
           ),

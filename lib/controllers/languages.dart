@@ -7,7 +7,16 @@ class Languages extends Translations {
           'title': 'Kredi Hesaplama',
           'total': 'Toplam Tutar',
           'range': 'Vade Süresi',
-          'bottom_line': '₺@total.000 @range Ay Vadeli'
+          'bottom_line': '₺@total.000 @range Ay Vadeli',
+          'oran': 'Oran',
+          'aylik_taksit': 'Aylık Taksit',
+          'maliyet': 'Maliyet',
+          'toplammdu': 'Toplam Maliyete Dahil Olan Ücretler',
+          'kredi': 'Kredi',
+          'kreditahsilat': 'Kredi Tahsil Ücreti',
+          'faiztut': 'Toplam Faiz Miktarı',
+          'toplam': 'Toplam Maliyet',
+          'yıllıkmaliyet': 'Yıllık Maliyet Oranı',
         }
       };
 }

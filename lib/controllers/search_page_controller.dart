@@ -11,7 +11,6 @@ class SearchPageX extends GetxController {
   void fetchData() async {
     isLoading(true);
     result.value = await Api().postData(totalValue.value, range.value);
-
     isLoading(false);
   }
 }

@@ -1,25 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:loan_offer/controllers/search_page_controller.dart';
 
 class CustomButton extends GetView {
-  CustomButton({
-    Key? key,
-  }) : super(key: key);
+  const CustomButton({Key? key, required Widget placeHolder, required Function() func})
+      : _placeHolder = placeHolder,
+        _func = func,
+        super(key: key);
 
-  final SearchPageX _x = Get.find();
+  final Widget _placeHolder;
+  final Function()? _func;
 
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-      onPressed: () {
-        _x.fetchData();
-      },
+      onPressed: _func,
       color: Get.theme.primaryColor,
-      child: Text(
-        'TeklifimGelsin',
-        style: Get.textTheme.button,
-      ),
+      child: _placeHolder,
     );
   }
 }

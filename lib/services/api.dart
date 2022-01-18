@@ -10,7 +10,6 @@ class Api extends GetConnect {
     if (response.status.hasError) {
       return Future.error(response.status);
     } else {
-      print(response.body);
       return resultFromJson(response.body);
     }
   }
